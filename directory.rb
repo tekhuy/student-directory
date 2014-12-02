@@ -4,35 +4,41 @@ student_count = 30
 puts "Makers Academy 8th December 2014 Cohort"
 puts "---------------------------------------"
 
-puts "Sanda Golcea"
-puts "Matteo Manzo"
-puts "Bibiana Cristòfol"
-puts "Steph Oldcorn"
-puts "Huy Le"
-puts "Kieran Goodacre"
-puts "Emily Sas"
-puts "India Dearlove"
-puts "Jacob Mitchinson"
-puts "Marcin Wal"
-puts "Andy Newman"
-puts "Richard Ighodaro"
-puts "Ptolemy Barnes"
-puts "Marcus de Wilde"
-puts "Bebbs"
-puts "Luke"
-puts "Oliver Lucas"
-puts "Jack Rubio"
-puts "David Blake"
-puts "Charlie Walsh"
-puts "Danielle"
-puts "Gabe"
-puts "Jin Dai"
-puts "Gus Powell"
-puts "Jake Alvarez"
-puts "Hannah Carney"
-puts "Clint"
-puts "Michael Colley"
-puts "JJ Lakin"
-puts "Will"
+students = [
+"Sanda Golcea",
+"Matteo Manzo",
+"Bibiana Cristòfol",
+"Steph Oldcorn",
+"Huy Le",
+"Kieran Goodacre",
+"Emily Sas", 
+"India Dearlove",
+"Jacob Mitchinson", 
+"Marcin Wal",
+"Andy Newman",
+"Richard Ighodaro",
+"Ptolemy Barnes",
+"Marcus de Wilde",
+"Bebbs",
+"Luke",
+"Oliver Lucas",
+"Jack Rubio",
+"David Blake",
+"Charlie Walsh",
+"Danielle",
+"Gabe",
+"Jin Dai",
+"Gus Powell",
+"Jake Alvarez",
+"Hannah Carney",
+"Clint",
+"Michael Colley",
+"JJ Lakin",
+"Will",
+]
+
+students.each do |student|
+	puts students
+end
 #finally we print the total
-puts "Overall, we have #{student_count} great students."
+puts "Overall, we have #{students.length} great students."
