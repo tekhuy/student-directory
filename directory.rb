@@ -20,10 +20,19 @@ def print_header
 	puts "---------------------------------------"
 end
 
-def print(students)
-	students.each_with_index do |student, index|
-    
-		puts "#{index+1}. #{student[:name]} (#{student[:cohort]} cohort)"
+# def print(students, starts_with = ".")
+# 	students.select do |student|  
+# 		if student[:name].match(starts_with "A").each do |student|
+# 			puts "#{student[:name]} (#{student[:cohort]} cohort)"
+# 		end
+# 	end
+# end
+
+def print_alpha(students, starts_with = "A")
+	students.each do |student| 
+		 if student[:name].split(//).first.upcase == starts_with.upcase
+		 	puts student[:name]
+		 end
 	end
 end
 
@@ -48,7 +57,9 @@ def interactive_menu
 			when "2"
 			#show the students
 			print_header
-			print(students)
+			puts "What is the first letter of the name you wish to show?"
+			letter = gets.chomp
+			print_alpha(students, letter)
 			print_footer(students)
 			when "9"
 				exit #this will cause the program to terminate
